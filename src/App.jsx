@@ -1,3 +1,5 @@
+import 'normalize.css';
+
 import Home from "./pages/Home/Home.jsx";
 
 function App() {
