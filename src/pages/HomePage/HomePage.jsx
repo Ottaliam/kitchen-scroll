@@ -3,9 +3,9 @@ import CategoryCardList from "./components/CategoryCardList.jsx";
 import SearchBox from "./components/SearchBox.jsx";
 import Footer from "../../components/Footer.jsx";
 
-import styles from './Home.module.css';
+import styles from './HomePage.module.css';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <a href="/#main" className={styles.skipMain}>Skip to main content</a>
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
