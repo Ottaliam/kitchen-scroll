@@ -1,0 +1,12 @@
+.skip-main {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  background-color: aquamarine;
+  margin: 1em;
+  padding: 1em;
+}
+
+.skip-main:focus {
+  top: 0;
+}
