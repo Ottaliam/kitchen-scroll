@@ -1,11 +1,15 @@
 import Header from "../../components/Header.jsx";
 import CategoryCardList from "./components/CategoryCardList.jsx";
+import SearchBox from "./components/SearchBox.jsx";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <CategoryCardList />
+      <main>
+        <CategoryCardList />
+        <SearchBox />
+      </main>
     </>
   );
 };

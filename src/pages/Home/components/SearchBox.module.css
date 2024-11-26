@@ -1,0 +1,16 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  width: 50%;
+  height: 2em;
+  padding: 0 0.5em;
+  border: 2px solid #ccc;
+}
+
+.search-box input:focus {
+  outline: none;
+}
