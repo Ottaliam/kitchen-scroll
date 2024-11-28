@@ -1,0 +1,15 @@
+.recipe-info h2 {
+  text-align: center;
+}
+
+.recipe-info ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.recipe-info ul li span:first-child {
+  font-weight: bold;
+  margin-right: 0.3em;
+}

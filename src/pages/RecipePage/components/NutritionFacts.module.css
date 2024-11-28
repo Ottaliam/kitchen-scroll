@@ -1,0 +1,22 @@
+.nutrition-facts {
+  list-style-type: none;
+}
+
+.nutrition-facts li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.nutrition-facts li:first-child span:last-child {
+  font-weight: bold;
+}
+
+.nutrition-facts li span:first-child {
+  font-weight: bold;
+  justify-self: start;
+}
