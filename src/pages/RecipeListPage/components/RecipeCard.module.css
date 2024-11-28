@@ -1,0 +1,23 @@
+.card {
+  display: grid;
+  grid-template-columns: 33% auto;
+  border: #cccccc solid 1px;
+  border-radius: 4%;
+  padding: 1em;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover
+}
+
+.card div {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+
+.card div h2 {
+  grid-column: 1 / -1;
+}
