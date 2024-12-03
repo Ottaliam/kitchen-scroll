@@ -1,5 +1,6 @@
 .nutrition-facts {
   list-style-type: none;
+  padding: 0;
 }
 
 .nutrition-facts li {
@@ -8,7 +9,7 @@
   gap: 10%;
   justify-content: space-between;
   justify-items: center;
-  padding: 0.5em 0;
+  padding: 2.5% 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -19,4 +20,10 @@
 .nutrition-facts li span:first-child {
   font-weight: bold;
   justify-self: start;
+}
+
+@media screen and (min-width: 800px) {
+  .nutrition-facts {
+    margin: 0 10%;
+  }
 }

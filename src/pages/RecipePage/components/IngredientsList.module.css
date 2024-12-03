@@ -1,6 +1,16 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(2, 45%);
-  gap: 10%;
+  grid-template-columns: 90%;
+  padding: 0;
   justify-content: center;
+}
+
+.list li {
+  margin-bottom: 2%;
+}
+
+@media screen and (min-width: 800px) {
+  .list {
+    grid-template-columns: 45% 45%;
+  }
 }

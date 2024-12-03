@@ -5,3 +5,9 @@
   padding: 0;
   margin: 5%;
 }
+
+@media screen and (min-width: 800px) {
+  .recipe-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
