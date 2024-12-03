@@ -1,19 +1,20 @@
 import styles from './IngredientsList.module.css';
 
-const IngredientsList = () => {
+import PropTypes from 'prop-types';
+
+const IngredientsList = ({ ingredients }) => {
   return (
     <div>
       <h2>Ingredients</h2>
       <ul className={styles.list}>
-        <li>Ingredient #1</li>
-        <li>Ingredient #2</li>
-        <li>Ingredient #3</li>
-        <li>Ingredient #4</li>
-        <li>Ingredient #5</li>
-        <li>Ingredient #6</li>
+        {ingredients.map((ingredient, index) => (<li key={index}>{ingredient}</li>))}
       </ul>
     </div>
   );
+};
+
+IngredientsList.propTypes = {
+  ingredients: PropTypes.array.isRequired,
 };
 
 export default IngredientsList;

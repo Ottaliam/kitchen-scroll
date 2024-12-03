@@ -1,20 +1,51 @@
 import { MdAccessTimeFilled } from "react-icons/md";
 import { BiSolidDish } from "react-icons/bi";
+import {useNavigate} from "react-router";
 
 import breakfast from "../../../assets/breakfast.jpg"
+import lunch from "../../../assets/lunch.jpg"
+import dinner from "../../../assets/dinner.jpg"
+import dessert from "../../../assets/dessert.jpg"
 import styles from "./RecipeCard.module.css"
 
-const RecipeCard = () => {
+import PropTypes from 'prop-types';
+
+const RecipeCard = ({ recipe }) => {
+  const navigate = useNavigate();
+
+  const getCardImage = (category) => {
+    switch (category) {
+      case "breakfast":
+        return breakfast;
+      case "lunch":
+        return lunch;
+      case "dinner":
+        return dinner;
+      case "dessert":
+        return dessert;
+    }
+  }
+
   return (
-    <div className={styles.card}>
-      <img src={breakfast} alt="breakfast" />
-      <h2>Breakfast</h2>
+    <div className={styles.card} onClick={() => navigate(`/recipe/${recipe.id}`)}>
+      <img src={getCardImage(recipe.category)} alt={recipe.category} />
+      <h2>{recipe.name}</h2>
       <div>
-        <span><MdAccessTimeFilled /> 5 mins</span>
-        <span><BiSolidDish /> 2 servings</span>
+        <span><MdAccessTimeFilled /> {recipe.estimateTime}</span>
+        <span><BiSolidDish /> {recipe.servings} serving(s)</span>
       </div>
     </div>
   );
+};
+
+RecipeCard.propTypes = {
+  recipe: PropTypes.shape({
+    category: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    estimateTime: PropTypes.string.isRequired,
+    servings: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default RecipeCard;

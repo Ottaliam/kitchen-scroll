@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .card img {
@@ -11,4 +12,8 @@
 
 .card h2 {
   text-align: center;
+}
+
+.card h2::first-letter {
+  text-transform: uppercase;
 }

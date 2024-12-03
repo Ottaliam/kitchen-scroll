@@ -1,20 +1,19 @@
 import styles from './RecipeInstructions.module.css';
+import PropTypes from 'prop-types';
 
-const RecipeInstructions = () => {
+const RecipeInstructions = ({ steps }) => {
   return (
     <div>
       <h2>Instructions</h2>
       <ol className={styles.list}>
-        <li>Step #1</li>
-        <li>Step #2</li>
-        <li>Step #3</li>
-        <li>Step #4</li>
-        <li>Step #5</li>
-        <li>Step #6</li>
-        <li>Step #7</li>
+        {steps.map((step, index) => (<li key={index}>{step}</li>))}
       </ol>
     </div>
   );
+};
+
+RecipeInstructions.propTypes = {
+  steps: PropTypes.array.isRequired,
 };
 
 export default RecipeInstructions;
