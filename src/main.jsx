@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 
 import recipes from "./utils/recipes.js";
 import 'normalize.css';
+import './main.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

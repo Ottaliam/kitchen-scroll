@@ -17,11 +17,12 @@ const RecipeListPage = ({ items }) => {
 
   return (
     <>
-      <Header />
-      <main>
-        <RecipeGrid recipes={items} />
+      <a id="skip-main" href="#main">Skip to main content</a>
+      <Header/>
+      <main id="main">
+        <RecipeGrid recipes={items}/>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 };

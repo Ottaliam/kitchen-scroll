@@ -8,7 +8,7 @@ import styles from './HomePage.module.css';
 const HomePage = () => {
   return (
     <>
-      <a href="/#main" className={styles.skipMain}>Skip to main content</a>
+      <a id="skip-main" href="#main">Skip to main content</a>
       <Header />
       <main id="main">
         <CategoryCardList />

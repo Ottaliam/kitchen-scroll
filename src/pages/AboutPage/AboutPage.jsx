@@ -6,11 +6,13 @@ import styles from './AboutPage.module.css';
 const AboutPage = () => {
   return (
     <>
+      <a id="skip-main" href="#main">Skip to main content</a>
       <Header/>
       <main id="main" className={styles.main}>
         <h2>About This Site</h2>
         <p>
-          This site collects pieces from the Elder Scroll about recipes that satisfied the hunger of Alduin, the First Dragon.
+          This site collects pieces from the Elder Scroll about recipes that satisfied the hunger of Alduin, the First
+          Dragon.
         </p>
         <p>
           Thanks to the last Dragonborn, the World Eater had been put to a permanent end.

@@ -16,14 +16,15 @@ const RecipePage = () => {
 
   return (
     <>
-      <Header />
-      <main className={styles.main}>
-        <RecipeInfo name={recipe.name} estimateTime={recipe.estimateTime} servings={recipe.servings} />
-        <IngredientsList ingredients={recipe.ingredients} />
-        <RecipeInstructions steps={recipe.steps} />
-        <NutritionFacts nutrition={recipe.nutrition} />
+      <a id="skip-main" href="#main">Skip to main content</a>
+      <Header/>
+      <main id="main" className={styles.main}>
+        <RecipeInfo name={recipe.name} estimateTime={recipe.estimateTime} servings={recipe.servings}/>
+        <IngredientsList ingredients={recipe.ingredients}/>
+        <RecipeInstructions steps={recipe.steps}/>
+        <NutritionFacts nutrition={recipe.nutrition}/>
       </main>
-      <Footer />
+      <Footer/>
     </>
   )
 }
