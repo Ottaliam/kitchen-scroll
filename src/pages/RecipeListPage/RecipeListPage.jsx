@@ -3,13 +3,23 @@ import Footer from "../../components/Footer.jsx";
 import RecipeGrid from "./components/RecipeGrid.jsx";
 
 import PropTypes from 'prop-types';
+import {useLocation, useParams} from "react-router";
 
-const RecipeListPage = ({ recipes }) => {
+import recipes from "../../utils/recipes.js";
+
+const RecipeListPage = ({ items }) => {
+  const { searchText } = useParams();
+  const location = useLocation();
+
+  if (location.pathname.startsWith("/search")) {
+    items = recipes.filter(recipe => recipe.name.toLowerCase().includes(decodeURIComponent(searchText.toLowerCase())));
+  }
+
   return (
     <>
       <Header />
       <main>
-        <RecipeGrid recipes={recipes} />
+        <RecipeGrid recipes={items} />
       </main>
       <Footer />
     </>
@@ -17,7 +27,7 @@ const RecipeListPage = ({ recipes }) => {
 };
 
 RecipeListPage.propTypes = {
-  recipes: PropTypes.array.isRequired,
+  items: PropTypes.array.isRequired,
 };
 
 export default RecipeListPage;

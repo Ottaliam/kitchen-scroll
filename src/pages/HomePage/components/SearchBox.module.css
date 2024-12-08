@@ -1,17 +1,4 @@
 .search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.search-box input {
   width: 50%;
-  height: 2em;
-  padding: 0 0.5em;
-  border: 2px solid #ccc;
-}
-
-.search-box input:focus {
-  outline: none;
+  margin: auto;
 }
