@@ -15,12 +15,15 @@ const Footer = () => {
       <div className={styles.socialContainer}>
         <a href="https://github.com/Ottaliam/kitchen-scroll">
           <FaGithub className={styles.icons} />
+          <span className={styles.srOnly}>Github</span>
         </a>
         <a href="https://www.linkedin.com/in/lingxiao-zhong-a91739325">
-          <FaLinkedin className={styles.icons} />
+          <FaLinkedin className={styles.icons}/>
+          <span className={styles.srOnly}>LinkedIn</span>
         </a>
         <a href="mailto:ottaliam@gmail.com">
-          <MdEmail className={styles.icons} />
+          <MdEmail className={styles.icons}/>
+          <span className={styles.srOnly}>Email</span>
         </a>
       </div>
 

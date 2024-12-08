@@ -6,6 +6,14 @@
   margin: 2.5%;
 }
 
+.card-list li {
+  display: block;
+}
+
+.card-list li div {
+  height: 100%;
+}
+
 @media screen and (min-width: 800px) {
   .card-list {
     grid-template-columns: repeat(4, 1fr);

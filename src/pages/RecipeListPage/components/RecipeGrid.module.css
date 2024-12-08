@@ -5,6 +5,10 @@
   margin: 5%;
 }
 
+.recipe-grid li {
+  display: block;
+}
+
 @media screen and (min-width: 800px) {
   .recipe-grid {
     grid-template-columns: repeat(4, 1fr);

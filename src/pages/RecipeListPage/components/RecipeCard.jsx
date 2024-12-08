@@ -28,7 +28,7 @@ const RecipeCard = ({ recipe }) => {
 
   return (
     <div className={styles.card} onClick={() => navigate(`/recipe/${recipe.id}`)}>
-      <img src={getCardImage(recipe.category)} alt={recipe.category} />
+      <img src={getCardImage(recipe.category)} alt="" />
       <h2>{recipe.name}</h2>
       <div>
         <span><MdAccessTimeFilled /> {recipe.estimateTime}</span>

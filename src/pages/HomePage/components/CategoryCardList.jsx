@@ -9,10 +9,10 @@ import styles from './CategoryCardList.module.css'
 const CategoryCardList = () => {
   return (
     <ul className={styles.cardList}>
-      <CategoryCard title="breakfast" image={breakfast} />
-      <CategoryCard title="lunch" image={lunch} />
-      <CategoryCard title="dinner" image={dinner} />
-      <CategoryCard title="dessert" image={dessert} />
+      <li><CategoryCard title="breakfast" image={breakfast} /></li>
+      <li><CategoryCard title="lunch" image={lunch} /></li>
+      <li><CategoryCard title="dinner" image={dinner} /></li>
+      <li><CategoryCard title="dessert" image={dessert} /></li>
     </ul>
   );
 };

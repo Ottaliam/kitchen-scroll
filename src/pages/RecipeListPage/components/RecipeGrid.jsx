@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const RecipeGrid = ({ recipes }) => {
   return (
     <ul className={styles.recipeGrid}>
-      {recipes.map((recipe) => <RecipeCard recipe={recipe} key={recipe.id} />)}
+      {recipes.map((recipe) => <li key={recipe.id}><RecipeCard recipe={recipe} /></li>)}
     </ul>
   );
 };

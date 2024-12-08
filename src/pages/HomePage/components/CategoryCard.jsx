@@ -8,7 +8,7 @@ const CategoryCard = ({ title, image }) => {
 
   return (
     <div className={styles.card} onClick={() => navigate(`/list/${title}`)}>
-      <img src={image} alt={title}/>
+      <img src={image} alt=""/>
       <h2>{title}</h2>
     </div>
   );
