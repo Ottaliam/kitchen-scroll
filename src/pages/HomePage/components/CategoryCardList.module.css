@@ -1,13 +1,13 @@
 .card-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5%;
   padding: 0;
   margin: 2.5%;
 }
 
 .card-list li {
   display: block;
+  margin: 2%;
 }
 
 .card-list li div {
