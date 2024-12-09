@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import {useLocation, useParams} from "react-router";
 
 import recipes from "../../utils/recipes.js";
+import {Helmet} from "react-helmet";
 
 const RecipeListPage = ({ items }) => {
   const { searchText } = useParams();
@@ -17,6 +18,9 @@ const RecipeListPage = ({ items }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Recipes | Recipe Scroll</title>
+      </Helmet>
       <a id="skip-main" href="#main">Skip to main content</a>
       <Header/>
       <main id="main">

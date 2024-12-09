@@ -2,10 +2,14 @@ import Header from "../../components/Header.jsx";
 import Footer from "../../components/Footer.jsx";
 
 import styles from './AboutPage.module.css';
+import {Helmet} from "react-helmet";
 
 const AboutPage = () => {
   return (
     <>
+      <Helmet>
+        <title>About | Recipe Scroll</title>
+      </Helmet>
       <a id="skip-main" href="#main">Skip to main content</a>
       <Header/>
       <main id="main" className={styles.main}>

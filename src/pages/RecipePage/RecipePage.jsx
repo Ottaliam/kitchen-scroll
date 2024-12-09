@@ -8,6 +8,7 @@ import NutritionFacts from "./components/NutritionFacts.jsx";
 
 import recipes from "../../utils/recipes.js";
 import styles from './RecipePage.module.css';
+import {Helmet} from "react-helmet";
 
 const RecipePage = () => {
   const { recipeId } = useParams();
@@ -16,6 +17,9 @@ const RecipePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{recipe.name} | Recipe Scroll</title>
+      </Helmet>
       <a id="skip-main" href="#main">Skip to main content</a>
       <Header/>
       <main id="main" className={styles.main}>
