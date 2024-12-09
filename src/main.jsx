@@ -13,7 +13,7 @@ import './main.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/kitchen-scroll/">
       <Routes>
         <Route index element = {<HomePage />} />
         <Route path="about" element={<AboutPage />} />

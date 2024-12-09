@@ -1,4 +1,5 @@
 import reactLogo from '../assets/react.svg'
+import { Link } from "react-router";
 
 import styles from './Header.module.css'
 
@@ -11,9 +12,9 @@ const Header = () => {
       </div>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/list">Recipes</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/list">Recipes</Link></li>
         </ul>
       </nav>
     </header>
