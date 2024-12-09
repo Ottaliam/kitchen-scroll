@@ -493,7 +493,7 @@ const recipes = [
     id: 17,
     category: 'dessert',
     name: 'Berry Sorbet',
-    estimateTime: '10 minutes (plus freezing time)',
+    estimateTime: '10 minutes',
     servings: '4',
     ingredients: [
       '3 cups mixed berries (strawberries, raspberries, blueberries)',
@@ -520,7 +520,7 @@ const recipes = [
     id: 18,
     category: 'dessert',
     name: 'Vanilla Panna Cotta',
-    estimateTime: '15 minutes (plus chilling time)',
+    estimateTime: '15 minutes',
     servings: '4',
     ingredients: [
       '2 cups heavy cream',
