@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const IngredientsList = ({ ingredients }) => {
   return (
-    <div>
+    <div tabIndex="0">
       <h2>Ingredients</h2>
       <ul className={styles.list}>
         {ingredients.map((ingredient, index) => (<li key={index}>{ingredient}</li>))}

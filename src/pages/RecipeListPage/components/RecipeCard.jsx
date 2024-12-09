@@ -27,7 +27,17 @@ const RecipeCard = ({ recipe }) => {
   }
 
   return (
-    <div className={styles.card} onClick={() => navigate(`/recipe/${recipe.id}`)}>
+    <div
+      className={styles.card}
+      onClick={() => navigate(`/recipe/${recipe.id}`)}
+      tabIndex="0"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') {
+          e.defaultMuiPrevented = true;
+          navigate(`/recipe/${recipe.id}`);
+        }
+      }}
+    >
       <img src={getCardImage(recipe.category)} alt="" />
       <h2>{recipe.name}</h2>
       <div>

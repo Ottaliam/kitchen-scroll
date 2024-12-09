@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const RecipeInfo = ({ name, estimateTime, servings }) => {
   return (
-    <div className={styles.recipeInfo}>
+    <div tabIndex="0" className={styles.recipeInfo}>
       <h2>{name}</h2>
       <ul>
         <li>

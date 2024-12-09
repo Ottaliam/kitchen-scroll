@@ -7,7 +7,17 @@ const CategoryCard = ({ title, image }) => {
   const navigate = useNavigate();
 
   return (
-    <div className={styles.card} onClick={() => navigate(`/list/${title}`)}>
+    <div
+      className={styles.card}
+      onClick={() => navigate(`/list/${title}`)}
+      tabIndex="0"
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') {
+          e.defaultMuiPrevented = true;
+          navigate(`/list/${title}`);
+        }
+      }}
+    >
       <img src={image} alt=""/>
       <h2>{title}</h2>
     </div>

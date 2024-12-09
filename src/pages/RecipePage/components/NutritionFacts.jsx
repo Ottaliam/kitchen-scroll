@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const NutritionFacts = ({ nutrition }) => {
   return (
-    <div>
+    <div tabIndex="0">
       <h2>Nutrition Facts</h2>
       <ul className={styles.nutritionFacts}>
         <li><span></span><span></span><span>% Daily Value</span></li>
